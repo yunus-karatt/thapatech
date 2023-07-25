@@ -28,3 +28,10 @@ function topFunction(){
   document.body.scrollTop=0;
   document.documentElement.scrollTop=0;
 }
+const form = document.querySelector("form")
+form.addEventListener('submit', e=>{
+  if(!form.checkValidity()){
+    e.preventDefault()
+  }
+  form.classList.add('was-validated')
+})

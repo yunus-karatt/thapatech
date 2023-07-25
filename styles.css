@@ -6,6 +6,7 @@ html{
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  font-display: swap;
 }
 a{
   text-decoration: none;
@@ -405,7 +406,7 @@ form:hover .form-button button{
 }
 
 /* media queries */
-@media(max-width: 768px){
+@media(max-width: 1000px){
   .nav-item{
     text-align: center;
   }
@@ -424,6 +425,6 @@ form:hover .form-button button{
     text-align: left!important;
   }
   .footer-div{
-    margin: 30px;
+    margin: 30px 30px 30px 0;
   }
 }
